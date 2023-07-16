@@ -1,0 +1,5 @@
+<div>
+    <div *ngFor="let date of dates" class="date-item">
+      <a [routerLink]="['/matches', formatDate(date)]">{{ date | date:'EEE, MMM d' }}</a>
+    </div>
+  </div>

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'task';
+ 
+  constructor(private http: HttpClient) {}
+
+  ngOnInit() {
+   
+  }
+  
+
+  
 }
